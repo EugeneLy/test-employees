@@ -4,9 +4,9 @@ import reduxThunk from 'redux-thunk';
 import reducers from './combineReducers';
 
 const enhancer = compose(
-  applyMiddleware(reduxThunk),
-  window.__REDUX_DEVTOOLS_EXTENSION__
-  && window.__REDUX_DEVTOOLS_EXTENSION__()
+  applyMiddleware(reduxThunk)
+  /* window.__REDUX_DEVTOOLS_EXTENSION__
+  && window.__REDUX_DEVTOOLS_EXTENSION__() */
 );
 
 const configureStore = (preloadedState) => {
