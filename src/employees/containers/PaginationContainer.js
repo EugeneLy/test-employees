@@ -8,6 +8,12 @@ import { parseHeaderLink } from '../services/parseHeaderLink';
 import Pagination from '../components/Pagination';
 
 class PaginationContainer extends Component {
+  static propTypes = {
+    changePage: PropTypes.func,
+    headerLink: PropTypes.string,
+    sorted: PropTypes.bool
+  };
+
   constructor(props) {
     super(props);
 
@@ -64,12 +70,6 @@ class PaginationContainer extends Component {
     );
   }
 }
-
-PaginationContainer.propTypes = {
-  changePage: PropTypes.func,
-  headerLink: PropTypes.string,
-  sorted: PropTypes.bool
-};
 
 const mapStateToProps = (state) => {
   return {

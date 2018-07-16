@@ -9,7 +9,10 @@
 
   .row-info {
     color: #333;
-
+    &.picture {
+      height: 150px;
+      margin-bottom: 10px;
+    }
     span {
       color: #0033cc;
       display: inline-block;
@@ -19,7 +22,7 @@
 
     img {
       display: block;
-      margin: 0 auto 10px;
+      margin: auto;
     }
   }
 }

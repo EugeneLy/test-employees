@@ -7,6 +7,12 @@ import { sortEmployees, getEmployees } from '../services/actions';
 import Filter from '../components/Filter';
 
 class FilterContainer extends Component {
+  static propTypes = {
+    sortEmployees: PropTypes.func,
+    getEmployees: PropTypes.func,
+    sorted: PropTypes.bool
+  };
+
   constructor(props) {
     super(props);
 
@@ -36,12 +42,6 @@ class FilterContainer extends Component {
     );
   }
 }
-
-FilterContainer.propTypes = {
-  sortEmployees: PropTypes.func,
-  getEmployees: PropTypes.func,
-  sorted: PropTypes.bool
-};
 
 const mapStateToProps = (state) => {
   return {

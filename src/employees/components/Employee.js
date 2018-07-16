@@ -13,7 +13,7 @@ const Employee = (props) => {
   return (
     <li className="employee">
       <Link to="/about">
-        <div className="row-info">
+        <div className="row-info picture">
           <img src={avatar} alt={first_name} />
         </div>
         <div className="row-info">
