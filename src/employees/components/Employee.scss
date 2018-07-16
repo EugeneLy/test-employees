@@ -1,0 +1,25 @@
+.employee {
+  box-sizing: border-box;
+  border: 1px solid #737373;
+  border-radius: 3px;
+  padding: 15px;
+  list-style: none;
+  margin: 12px 2%;
+  width: 46%;
+
+  .row-info {
+    color: #333;
+
+    span {
+      color: #0033cc;
+      display: inline-block;
+      margin-right: 5px;
+      font-weight: 600;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+  }
+}
